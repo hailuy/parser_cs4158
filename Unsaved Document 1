@@ -1,0 +1,17 @@
+
+              | TYPE ID
+              | PRIN SENTENCE
+              | PRIN ID rest
+              | MOV INT TOO ID
+              | MOV DOUBLE TOO ID
+              | AD ID TOO ID
+              | REA ID;
+
+
+rest:	        COMMA SENTENCE rest
+              | COMMA ID rest
+	      | COMMA SENTENCE
+              | COMMA ID;
+
+
+%type <str_val>		rest;

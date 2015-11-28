@@ -1,0 +1,14 @@
+
+BEGIN.
+
+SSSS X.
+SS Y.
+SSS Z.
+
+PRINT "Please enter a number?".
+READ Y.
+
+ADD X TO Z.
+PRINT X," + ",Y,"=",Z.
+
+END.

@@ -1,0 +1,12 @@
+
+BEGIN.
+
+
+SSSS Z.
+
+MOVE 9001 TO Z..
+
+PRINT Z.
+
+
+END.

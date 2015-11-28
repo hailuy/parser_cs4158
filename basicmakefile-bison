@@ -1,0 +1,14 @@
+
+# created by joseph.burke@ul.ie
+# type "make -f basicmakefile" at the terminal to run
+
+
+all: compile clean
+
+compile:
+	bison -d parser.y
+	flex lexer.l
+	gcc lex.yy.c parser.tab.c -o myproject.out
+
+clean:
+	rm -rf lexer.yy.c parser.tab.c parser.tab.h
